@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skönhetssalong</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; direction: ltr; }
+    header { background: #e91e63; color: white; padding: 20px; text-align: center; }
+    nav { background: #f8f8f8; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #e91e63; font-weight: bold; }
+    section { padding: 40px; max-width: 900px; margin: auto; }
+    h2 { color: #e91e63; }
+    .service { border-bottom: 1px solid #eee; padding: 10px 0; }
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; }
+    input, select, textarea, button { padding: 10px; font-size: 16px; }
+    button { background: #e91e63; color: white; border: none; cursor: pointer; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Salong Princess</h1>
+    <p>Din skönhet är vår stolthet</p>
+  </header>
+
+  <nav>
+    <a href="#services">Tjänster</a>
+    <a href="#booking">Boka tid</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <section id="services">
+    <h2>Våra tjänster</h2>
+    <div class="service">💇‍♀️ Klippning - 200 kr</div>
+    <div class="service">🎨 Hårfärgning - 500 kr</div>
+    <div class="service">💅 Nagelförlängning - 350 kr</div>
+  </section>
+
+  <section id="booking">
+    <h2>Boka tid online</h2>
+    <form>
+      <input type="text" placeholder="Namn och efternamn" required>
+      <input type="tel" placeholder="Telefonnummer" required>
+      <select required>
+        <option value="">Välj tjänst</option>
+        <option>Klippning</option>
+        <option>Hårfärgning</option>
+        <option>Nagelförlängning</option>
+      </select>
+      <input type="date" required>
+      <input type="time" required>
+      <button type="submit">Boka</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>📍 Adress: Stockholm, Exempelgatan 10, Salong Princess</p>
+    <p>📞 Telefon: 070-000 00 00</p>
+    <p>📸 Instagram: <a href="#">@princess_salon</a></p>
+    <p>💬 WhatsApp: <a href="#">Chatta med oss</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Salong Princess</p>
+  </footer>
+</body>
+</html>
